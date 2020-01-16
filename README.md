@@ -15,6 +15,8 @@
 
 5. En la segunda terminal, ejecutar los siguientes comandos en orden:
 
+`cd frontend-news-finametrix`
+
 `npm install -g @angular/cli` (si ya se tiene Angular CLI instalado, pasar al siguiente comando)
 
 `npm update`
