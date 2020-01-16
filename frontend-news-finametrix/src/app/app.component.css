@@ -1,0 +1,23 @@
+* {
+  overflow: hidden;
+}
+
+.header {
+  background-image: linear-gradient(to bottom right, rgb(30,26,57) , rgb(66, 75, 176));
+  min-height: 100vh;
+  position: relative;
+}
+
+nav .navbar-nav li a{
+  color: white !important;
+  }
+
+.header__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+

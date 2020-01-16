@@ -1,0 +1,66 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    max-height: max-content;
+}
+
+.no-pdg-left {
+    padding-left: 0px !important;
+}
+
+.date-small {
+    color: grey;
+    font-size: 15px;
+}
+
+.header .navbar {
+  background-image: linear-gradient(to bottom right, rgb(30,26,57) , rgb(66, 75, 176));
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.row {
+    margin: 0px 100px;
+}
+
+.new .btn {
+    color: white;
+}
+
+.new .btn:hover {
+    color: white;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    opacity: 0.35;
+    overflow: hidden;
+}
+
+.bg-video video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.relative {
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+.absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+}
+
+h1 {
+    font-size: 100px;
+}

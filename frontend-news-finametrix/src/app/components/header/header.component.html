@@ -1,0 +1,35 @@
+<header class="header">
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="d-flex flex-grow-1">
+          <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+          <a class="navbar-brand" href="#">
+            <img src="../../../assets/imgs/finametrix_logo.png" width="200px" class="d-inline-block align-top" alt="">
+          </a>
+          <div class="w-100 text-right">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+      </div>
+      <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+          <ul class="navbar-nav ml-auto flex-nowrap">
+              <li class="nav-item">
+                  <a routerLink="/general" class="nav-link m-2 menu-item">Noticias generales</a>
+              </li>
+              <li class="nav-item">
+                  <a routerLink="/archived" class="nav-link m-2 menu-item">Noticias archivadas</a>
+              </li>
+              <li class="nav-item">
+                  <a routerLink="/addNew" class="nav-link m-2 menu-item">Añadir noticia</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  
+    <div class="header__content">
+      <h1 class="header__title">{{ titleSection }}</h1>
+      <p class="header__description">{{ subtitleSection }}</p>
+    </div>
+  
+  </header>

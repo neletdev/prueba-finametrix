@@ -1,0 +1,29 @@
+<app-header section="general"></app-header>
+
+<div class="row mb-5 mt-5">
+
+  <h2 class="mb-5 mt-4 col-sm-12">Noticias generales</h2>
+
+  <div *ngIf="allGeneralNews?.length == 0" class="col-sm-12 mb-3 no-pdg-left">
+    <div class="alert alert-dark" role="alert">
+      No hay noticias. Puede añadir alguna haciendo click <a routerLink="/addNew">aquí</a>.
+    </div>
+  </div>
+
+  <div *ngIf="allGeneralNews?.length > 0">
+
+    <div class="col-sm-12 mb-5" *ngFor="let item of allGeneralNews">
+  
+      <div class="new">
+        <h5 class="card-title">{{ item?.title }}</h5>
+        <p class="card-text">{{ item?.descr }}</p>
+        <p class="card-text date-small">Created: {{item?.date | date: 'MMM d, y, h:mm:ss a'}} by {{ item?.author }}</p>
+        <a class="btn btn-primary" [routerLink]="['read', item._id]">Leer noticia</a>
+        <a class="btn btn-secondary ml-3" (click)="archive(item)">Archivar</a>
+      </div>
+  
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,32 @@
+<app-header section="formulario"></app-header>
+
+<div class="row mb-5 mt-5">
+
+    <h2 class="mb-4 mt-4">Añadir noticia</h2>
+    <hr>
+    
+    <div class="col-sm-12 mb-5">
+        <form [formGroup]="newsForm" (ngSubmit)="createNew(newsForm.value)">
+            <div class="form-group">
+              <label for="newsTitle">Título</label>
+              <input formControlName="title" type="text" class="form-control" id="newsTitle" placeholder="Introduce el título de la noticia">
+            </div>
+            <div class="form-group">
+                <label for="newsAuthor">Autor</label>
+                <input formControlName="author" type="text" class="form-control" id="newsAuthor" placeholder="Introduce el autor de la noticia">
+              </div>
+            <div class="form-group">
+                <label for="newsDescription">Descripción</label>
+                <textarea formControlName="descr" class="form-control" id="newsDescription" rows="2" placeholder="Introduce una breve descripción de la noticia"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="newsContent">Contenido</label>
+                <textarea formControlName="content" class="form-control" id="newsContent" rows="5" placeholder="Introduce el contenido de la noticia"></textarea>
+            </div>
+            
+            <button [disabled]="newsForm.invalid" type="submit" class="btn btn-primary">Añadir</button>
+          </form>
+
+    </div>
+
+</div>
